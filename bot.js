@@ -57,7 +57,7 @@ if (!process.env.clientId || !process.env.clientSecret || !process.env.PORT) {
   process.exit(1);
 }
 
-var Botkit = require('botkit');
+var Botkit = require('./lib/Botkit.js');
 var debug = require('debug')('botkit:main');
 
 // Create the Botkit controller, which controls all instances of the bot.
